@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:tanda/core/utils/app_colors.dart';
 import 'package:tanda/core/utils/app_fonts.dart';
+import 'package:tanda/general/auth/presentation/screens/authorization_screen.dart';
+import 'package:tanda/general/auth/presentation/widgets/auth_button.dart';
 import 'package:tanda/resources/resources.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -43,12 +44,26 @@ class OnboardingScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              ElevatedButton(
-                  onPressed: () {},
-                  child: Text(
-                    "Customer",
-                    style: AppFonts.s16w700,
-                  ))
+              const SizedBox(
+                height: 100,
+              ),
+              AuthButton(
+                buttonText: 'Customer',
+                onPressed: () {
+                  Navigator.push(context, AuthorizationScreen.route());
+                },
+                bgColor: AppColors.accentColor,
+                color: AppColors.secondaryColor,
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              AuthButton(
+                buttonText: 'Bussiness',
+                onPressed: () {
+                  Navigator.push(context, AuthorizationScreen.route());
+                },
+              )
             ],
           ),
         ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:tanda/general/presentation/screens/onboarding_screen.dart';
-import 'package:tanda/general/presentation/screens/splash_screen.dart';
+import 'package:tanda/general/auth/presentation/screens/onboarding_screen.dart';
+import 'package:tanda/general/auth/presentation/screens/splash_screen.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>();
 final _shellNavigatorKey = GlobalKey<NavigatorState>();

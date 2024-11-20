@@ -3,10 +3,11 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tanda/config/routes/app_routes.dart';
 import 'package:tanda/core/utils/app_colors.dart';
+import 'package:tanda/core/utils/theme.dart';
 
 void main() {
   runApp(const MyApp());
-  debugPaintLayerBordersEnabled = true;
+  // debugPaintLayerBordersEnabled = true;
 }
 
 class MyApp extends StatelessWidget {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp.router(
-        color: AppColors.backgroundColor,
+        theme: AppThem.appThemeMode,
         routerConfig: router,
         debugShowCheckedModeBanner: false,
       ),
