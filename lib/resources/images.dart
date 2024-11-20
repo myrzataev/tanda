@@ -5,4 +5,5 @@ class Images {
 
   static const String log = 'assets/pngs/log.png';
   static const String logo = 'assets/pngs/logo.png';
+  static const String pola = 'assets/pngs/pola.png';
 }

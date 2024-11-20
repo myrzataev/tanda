@@ -1,10 +1,9 @@
 import 'package:another_flutter_splash_screen/another_flutter_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:tanda/core/utils/app_colors.dart';
-import 'package:tanda/general/presentation/screens/registration_screen.dart';
+import 'package:tanda/general/auth/presentation/screens/registration_screen.dart';
 import 'package:tanda/resources/resources.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -21,7 +20,7 @@ class SplashScreen extends StatelessWidget {
         },
         onEnd: () {
           GoRouter.of(context).goNamed("onBoarding");
-        },
+        }, 
         childWidget: SizedBox(
             height: 200.h,
             width: 200.w,
