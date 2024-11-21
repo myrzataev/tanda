@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:tanda/bussiness/presentation/screens/bussiness_add_item_screen.dart';
 import 'package:tanda/bussiness/presentation/screens/bussiness_bot_nav_bar_screen.dart';
 import 'package:tanda/core/utils/app_colors.dart';
 import 'package:tanda/core/utils/app_fonts.dart';
@@ -94,7 +95,7 @@ class _AuthorizationScreenState extends State<AuthorizationScreen> {
               AuthButton(
                   buttonText: 'Войти',
                   onPressed: () {
-                    Navigator.push(context, BussinessBotNavBarScreen.route());
+                    Navigator.push(context, BussinessAddItemScreen.route());
                   }),
               const SizedBox(
                 height: 30,

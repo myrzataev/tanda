@@ -30,6 +30,7 @@ class _BussinessBotNavBarScreenState extends State<BussinessBotNavBarScreen> {
       bottomNavigationBar: BottomNavigationBar(
           backgroundColor: const Color.fromRGBO(255, 255, 255, 1),
           showSelectedLabels: false,
+          
           selectedIconTheme:
               const IconThemeData(color: AppColors.secondaryColor),
           iconSize: 18.w,

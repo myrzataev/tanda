@@ -113,38 +113,6 @@ class _BussinessHomeScreenState extends State<BussinessHomeScreen> {
                         ),
                       ),
                     ),
-                    // Positioned(
-                    //   bottom: 0,
-                    //   left: 0,
-                    //   child: Container(
-                    //     width: 80,
-                    //     height: 40,
-                    //     decoration: const BoxDecoration(
-                    //       color: Colors.white,
-                    //       // Slightly rounded corners
-                    //     ),
-                    //     child: const Center(
-                    //       child: Icon(
-                    //         Icons.arrow_forward, // Arrow icon
-                    //         size: 16,
-                    //         color: Colors.black,
-                    //       ),
-                    //     ),
-                    //   ),
-                    // ),
-
-                    // Arrow Icon Button
-                    // Positioned(
-                    //   bottom: 8,
-                    //   right: 8,
-                    //   child: IconButton(
-                    //     icon: const Icon(Icons.arrow_forward),
-                    //     color: Colors.black,
-                    //     onPressed: () {
-                    //       // Add action here
-                    //     },
-                    //   ),
-                    // ),
                   ],
                 ),
               ),
